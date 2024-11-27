@@ -142,81 +142,218 @@ img.add_border {
           
         </header>
     <div id="tipue_search_content">w10 << <a href='w10.html'>Previous</a> <a href='HW2.html'>Next</a> >> HW2<br /><h1>w11</h1>
-<p><iframe allowfullscreen="allowfullscreen" height="314" src='//www.youtube.com/embed/crkTO3RM-6c?si=8SO3I7f--uxqrR7_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen&gt;&lt;/iframe&gt;' width="560"></iframe></p>
+<p><br/><br/></p>
+<p><iframe allowfullscreen="allowfullscreen" data-mce-fragment="1" height="314" src="https://www.youtube.com/embed/crkTO3RM-6c?si=8SO3I7f--uxqrR7_%22%20title=%22YouTube%20video%20player%22%20frameborder=%220%22%20allow=%22accelerometer;%20autoplay;%20clipboard-write;%20encrypted-media;%20gyroscope;%20picture-in-picture;%20web-share%22%20referrerpolicy=%22strict-origin-when-cross-origin%22%20allowfullscreen%3E%3C/iframe%3E" width="560"></iframe></p>
 <p>第一題</p>
-<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import math
-
-# 設定區域大小
-size = 10
-radius = 3  # 圓的半徑
-center = (size // 2, size // 2)  # 圓心位置在 5,5
-
-# 創建 10x10 的字元區域
-grid = [[' ' for _ in range(size)] for _ in range(size)]
-
-# 在區域中畫圓
-for y in range(size):
-    for x in range(size):
-        # 計算每個點到圓心的距離
-        distance = math.sqrt((x - center[0])**2 + (y - center[1])**2)
-        if abs(distance - radius) &lt;= 0.5:  # 判斷點是否在圓周上
-            grid[y][x] = '*'
-
-# 顯示結果
-for row in grid:
-    print(''.join(row))
-</pre>
+<div>
+<div class="syntaxhighlighter py" id="highlighter_974227">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line number1 index0 alt2">1</div>
+<div class="line number2 index1 alt1">2</div>
+<div class="line number3 index2 alt2">3</div>
+<div class="line number4 index3 alt1">4</div>
+<div class="line number5 index4 alt2">5</div>
+<div class="line number6 index5 alt1">6</div>
+<div class="line number7 index6 alt2">7</div>
+<div class="line number8 index7 alt1">8</div>
+<div class="line number9 index8 alt2">9</div>
+<div class="line number10 index9 alt1">10</div>
+<div class="line number11 index10 alt2">11</div>
+<div class="line number12 index11 alt1">12</div>
+<div class="line number13 index12 alt2">13</div>
+<div class="line number14 index13 alt1">14</div>
+<div class="line number15 index14 alt2">15</div>
+<div class="line number16 index15 alt1">16</div>
+<div class="line number17 index16 alt2">17</div>
+<div class="line number18 index17 alt1">18</div>
+<div class="line number19 index18 alt2">19</div>
+<div class="line number20 index19 alt1">20</div>
+<div class="line number21 index20 alt2">21</div>
+</td>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="py keyword">import</code> <code class="py plain">math</code></div>
+<div class="line number2 index1 alt1"> </div>
+<div class="line number3 index2 alt2"><code class="py comments"># 設定區域大小</code></div>
+<div class="line number4 index3 alt1"><code class="py plain">size </code><code class="py keyword">=</code> <code class="py value">10</code></div>
+<div class="line number5 index4 alt2"><code class="py plain">radius </code><code class="py keyword">=</code> <code class="py value">3</code>  <code class="py comments"># 圓的半徑</code></div>
+<div class="line number6 index5 alt1"><code class="py plain">center </code><code class="py keyword">=</code> <code class="py plain">(size </code><code class="py keyword">/</code><code class="py keyword">/</code> <code class="py value">2</code><code class="py plain">, size </code><code class="py keyword">/</code><code class="py keyword">/</code> <code class="py value">2</code><code class="py plain">)  </code><code class="py comments"># 圓心位置在 5,5</code></div>
+<div class="line number7 index6 alt2"> </div>
+<div class="line number8 index7 alt1"><code class="py comments"># 創建 10x10 的字元區域</code></div>
+<div class="line number9 index8 alt2"><code class="py plain">grid </code><code class="py keyword">=</code> <code class="py plain">[[</code><code class="py string">' '</code> <code class="py keyword">for</code> <code class="py plain">_ </code><code class="py keyword">in</code> <code class="py functions">range</code><code class="py plain">(size)] </code><code class="py keyword">for</code> <code class="py plain">_ </code><code class="py keyword">in</code> <code class="py functions">range</code><code class="py plain">(size)]</code></div>
+<div class="line number10 index9 alt1"> </div>
+<div class="line number11 index10 alt2"><code class="py comments"># 在區域中畫圓</code></div>
+<div class="line number12 index11 alt1"><code class="py keyword">for</code> <code class="py plain">y </code><code class="py keyword">in</code> <code class="py functions">range</code><code class="py plain">(size):</code></div>
+<div class="line number13 index12 alt2"><code class="py spaces">    </code><code class="py keyword">for</code> <code class="py plain">x </code><code class="py keyword">in</code> <code class="py functions">range</code><code class="py plain">(size):</code></div>
+<div class="line number14 index13 alt1"><code class="py spaces">        </code><code class="py comments"># 計算每個點到圓心的距離</code></div>
+<div class="line number15 index14 alt2"><code class="py spaces">        </code><code class="py plain">distance </code><code class="py keyword">=</code> <code class="py plain">math.sqrt((x </code><code class="py keyword">-</code> <code class="py plain">center[</code><code class="py value">0</code><code class="py plain">])</code><code class="py keyword">*</code><code class="py keyword">*</code><code class="py value">2</code> <code class="py keyword">+</code> <code class="py plain">(y </code><code class="py keyword">-</code> <code class="py plain">center[</code><code class="py value">1</code><code class="py plain">])</code><code class="py keyword">*</code><code class="py keyword">*</code><code class="py value">2</code><code class="py plain">)</code></div>
+<div class="line number16 index15 alt1"><code class="py spaces">        </code><code class="py keyword">if</code> <code class="py functions">abs</code><code class="py plain">(distance </code><code class="py keyword">-</code> <code class="py plain">radius) &lt;</code><code class="py keyword">=</code> <code class="py value">0.5</code><code class="py plain">:  </code><code class="py comments"># 判斷點是否在圓周上</code></div>
+<div class="line number17 index16 alt2"><code class="py spaces">            </code><code class="py plain">grid[y][x] </code><code class="py keyword">=</code> <code class="py string">'*'</code></div>
+<div class="line number18 index17 alt1"> </div>
+<div class="line number19 index18 alt2"><code class="py comments"># 顯示結果</code></div>
+<div class="line number20 index19 alt1"><code class="py keyword">for</code> <code class="py plain">row </code><code class="py keyword">in</code> <code class="py plain">grid:</code></div>
+<div class="line number21 index20 alt2"><code class="py spaces">    </code><code class="py functions">print</code><code class="py plain">(''.join(row))</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 <p>第二題</p>
-<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">from browser import html
-from browser import document as doc
-
-# 建立 canvas 超文件物件
-canvas = html.CANVAS(width=400, height=400)
-brython_div = doc["brython_div1"]
-brython_div &lt;= canvas
-
-# 每一格的 pixel 數
-gs = 20
-
-# canvas context
-ctx = canvas.getContext("2d")
-
-# 定義繪製矩形的函數
-def dRect(lux, luy, w, h, s=1, c="lightgrey"):
-    ctx.lineWidth = s
-    ctx.strokeStyle = c
-    ctx.beginPath()
-    ctx.rect(lux, luy, w, h)
-    ctx.stroke()
-
-# 繪製網格
-def grid(width, height, grid_pix):
-    for i in range(width):
-        for j in range(height):
-            dRect(i * grid_pix, j * grid_pix, grid_pix, grid_pix, 1, "lightgrey")
-
-# 填滿指定格子
-def fill(x, y, color):
-    ctx.fillStyle = color
-    ctx.fillRect((x - 1) * gs, (y - 1) * gs, gs, gs)
-
-# 判斷是否在圓形範圍內
-def is_in_circle(cx, cy, x, y, r):
-    return ((x - cx) ** 2 + (y - cy) ** 2) &lt;= r ** 2
-
-# 圓形繪製
-def draw_circle(grid_size, radius):
-    center = (grid_size // 2) + 0.5  # 圓心位於中心
-    for i in range(1, grid_size + 1):
-        for j in range(1, grid_size + 1):
-            # 檢查格子中心點是否在圓內
-            if is_in_circle(center, center, i, j, radius):
-                fill(i, j, "black")
-
-# 主程式
-grid(10, 10, gs)
-draw_circle(10, 5)  # 圓的半徑為 4.5</pre>
-<p></p><br />w10 << <a href='w10.html'>Previous</a> <a href='HW2.html'>Next</a> >> HW2</div>
+<div>
+<div class="syntaxhighlighter py" id="highlighter_64579">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line number1 index0 alt2">1</div>
+<div class="line number2 index1 alt1">2</div>
+<div class="line number3 index2 alt2">3</div>
+<div class="line number4 index3 alt1">4</div>
+<div class="line number5 index4 alt2">5</div>
+<div class="line number6 index5 alt1">6</div>
+<div class="line number7 index6 alt2">7</div>
+<div class="line number8 index7 alt1">8</div>
+<div class="line number9 index8 alt2">9</div>
+<div class="line number10 index9 alt1">10</div>
+<div class="line number11 index10 alt2">11</div>
+<div class="line number12 index11 alt1">12</div>
+<div class="line number13 index12 alt2">13</div>
+<div class="line number14 index13 alt1">14</div>
+<div class="line number15 index14 alt2">15</div>
+<div class="line number16 index15 alt1">16</div>
+<div class="line number17 index16 alt2">17</div>
+<div class="line number18 index17 alt1">18</div>
+<div class="line number19 index18 alt2">19</div>
+<div class="line number20 index19 alt1">20</div>
+<div class="line number21 index20 alt2">21</div>
+<div class="line number22 index21 alt1">22</div>
+<div class="line number23 index22 alt2">23</div>
+<div class="line number24 index23 alt1">24</div>
+<div class="line number25 index24 alt2">25</div>
+<div class="line number26 index25 alt1">26</div>
+<div class="line number27 index26 alt2">27</div>
+<div class="line number28 index27 alt1">28</div>
+<div class="line number29 index28 alt2">29</div>
+<div class="line number30 index29 alt1">30</div>
+<div class="line number31 index30 alt2">31</div>
+<div class="line number32 index31 alt1">32</div>
+<div class="line number33 index32 alt2">33</div>
+<div class="line number34 index33 alt1">34</div>
+<div class="line number35 index34 alt2">35</div>
+<div class="line number36 index35 alt1">36</div>
+<div class="line number37 index36 alt2">37</div>
+<div class="line number38 index37 alt1">38</div>
+<div class="line number39 index38 alt2">39</div>
+<div class="line number40 index39 alt1">40</div>
+<div class="line number41 index40 alt2">41</div>
+<div class="line number42 index41 alt1">42</div>
+<div class="line number43 index42 alt2">43</div>
+<div class="line number44 index43 alt1">44</div>
+<div class="line number45 index44 alt2">45</div>
+<div class="line number46 index45 alt1">46</div>
+<div class="line number47 index46 alt2">47</div>
+<div class="line number48 index47 alt1">48</div>
+<div class="line number49 index48 alt2">49</div>
+</td>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="py keyword">from</code> <code class="py plain">browser </code><code class="py keyword">import</code> <code class="py plain">html</code></div>
+<div class="line number2 index1 alt1"><code class="py keyword">from</code> <code class="py plain">browser </code><code class="py keyword">import</code> <code class="py plain">document as doc</code></div>
+<div class="line number3 index2 alt2"> </div>
+<div class="line number4 index3 alt1"><code class="py comments"># 建立 canvas 超文件物件</code></div>
+<div class="line number5 index4 alt2"><code class="py plain">canvas </code><code class="py keyword">=</code> <code class="py plain">html.CANVAS(width</code><code class="py keyword">=</code><code class="py value">400</code><code class="py plain">, height</code><code class="py keyword">=</code><code class="py value">400</code><code class="py plain">)</code></div>
+<div class="line number6 index5 alt1"><code class="py plain">brython_div </code><code class="py keyword">=</code> <code class="py plain">doc[</code><code class="py string">"brython_div1"</code><code class="py plain">]</code></div>
+<div class="line number7 index6 alt2"><code class="py plain">brython_div &lt;</code><code class="py keyword">=</code> <code class="py plain">canvas</code></div>
+<div class="line number8 index7 alt1"> </div>
+<div class="line number9 index8 alt2"><code class="py comments"># 每一格的 pixel 數</code></div>
+<div class="line number10 index9 alt1"><code class="py plain">gs </code><code class="py keyword">=</code> <code class="py value">20</code></div>
+<div class="line number11 index10 alt2"> </div>
+<div class="line number12 index11 alt1"><code class="py comments"># canvas context</code></div>
+<div class="line number13 index12 alt2"><code class="py plain">ctx </code><code class="py keyword">=</code> <code class="py plain">canvas.getContext(</code><code class="py string">"2d"</code><code class="py plain">)</code></div>
+<div class="line number14 index13 alt1"> </div>
+<div class="line number15 index14 alt2"><code class="py comments"># 定義繪製矩形的函數</code></div>
+<div class="line number16 index15 alt1"><code class="py keyword">def</code> <code class="py plain">dRect(lux, luy, w, h, s</code><code class="py keyword">=</code><code class="py value">1</code><code class="py plain">, c</code><code class="py keyword">=</code><code class="py string">"lightgrey"</code><code class="py plain">):</code></div>
+<div class="line number17 index16 alt2"><code class="py spaces">    </code><code class="py plain">ctx.lineWidth </code><code class="py keyword">=</code> <code class="py plain">s</code></div>
+<div class="line number18 index17 alt1"><code class="py spaces">    </code><code class="py plain">ctx.strokeStyle </code><code class="py keyword">=</code> <code class="py plain">c</code></div>
+<div class="line number19 index18 alt2"><code class="py spaces">    </code><code class="py plain">ctx.beginPath()</code></div>
+<div class="line number20 index19 alt1"><code class="py spaces">    </code><code class="py plain">ctx.rect(lux, luy, w, h)</code></div>
+<div class="line number21 index20 alt2"><code class="py spaces">    </code><code class="py plain">ctx.stroke()</code></div>
+<div class="line number22 index21 alt1"> </div>
+<div class="line number23 index22 alt2"><code class="py comments"># 繪製網格</code></div>
+<div class="line number24 index23 alt1"><code class="py keyword">def</code> <code class="py plain">grid(width, height, grid_pix):</code></div>
+<div class="line number25 index24 alt2"><code class="py spaces">    </code><code class="py keyword">for</code> <code class="py plain">i </code><code class="py keyword">in</code> <code class="py functions">range</code><code class="py plain">(width):</code></div>
+<div class="line number26 index25 alt1"><code class="py spaces">        </code><code class="py keyword">for</code> <code class="py plain">j </code><code class="py keyword">in</code> <code class="py functions">range</code><code class="py plain">(height):</code></div>
+<div class="line number27 index26 alt2"><code class="py spaces">            </code><code class="py plain">dRect(i </code><code class="py keyword">*</code> <code class="py plain">grid_pix, j </code><code class="py keyword">*</code> <code class="py plain">grid_pix, grid_pix, grid_pix, </code><code class="py value">1</code><code class="py plain">, </code><code class="py string">"lightgrey"</code><code class="py plain">)</code></div>
+<div class="line number28 index27 alt1"> </div>
+<div class="line number29 index28 alt2"><code class="py comments"># 填滿指定格子</code></div>
+<div class="line number30 index29 alt1"><code class="py keyword">def</code> <code class="py plain">fill(x, y, color):</code></div>
+<div class="line number31 index30 alt2"><code class="py spaces">    </code><code class="py plain">ctx.fillStyle </code><code class="py keyword">=</code> <code class="py plain">color</code></div>
+<div class="line number32 index31 alt1"><code class="py spaces">    </code><code class="py plain">ctx.fillRect((x </code><code class="py keyword">-</code> <code class="py value">1</code><code class="py plain">) </code><code class="py keyword">*</code> <code class="py plain">gs, (y </code><code class="py keyword">-</code> <code class="py value">1</code><code class="py plain">) </code><code class="py keyword">*</code> <code class="py plain">gs, gs, gs)</code></div>
+<div class="line number33 index32 alt2"> </div>
+<div class="line number34 index33 alt1"><code class="py comments"># 判斷是否在圓形範圍內</code></div>
+<div class="line number35 index34 alt2"><code class="py keyword">def</code> <code class="py plain">is_in_circle(cx, cy, x, y, r):</code></div>
+<div class="line number36 index35 alt1"><code class="py spaces">    </code><code class="py keyword">return</code> <code class="py plain">((x </code><code class="py keyword">-</code> <code class="py plain">cx) </code><code class="py keyword">*</code><code class="py keyword">*</code> <code class="py value">2</code> <code class="py keyword">+</code> <code class="py plain">(y </code><code class="py keyword">-</code> <code class="py plain">cy) </code><code class="py keyword">*</code><code class="py keyword">*</code> <code class="py value">2</code><code class="py plain">) &lt;</code><code class="py keyword">=</code> <code class="py plain">r </code><code class="py keyword">*</code><code class="py keyword">*</code> <code class="py value">2</code></div>
+<div class="line number37 index36 alt2"> </div>
+<div class="line number38 index37 alt1"><code class="py comments"># 圓形繪製</code></div>
+<div class="line number39 index38 alt2"><code class="py keyword">def</code> <code class="py plain">draw_circle(grid_size, radius):</code></div>
+<div class="line number40 index39 alt1"><code class="py spaces">    </code><code class="py plain">center </code><code class="py keyword">=</code> <code class="py plain">(grid_size </code><code class="py keyword">/</code><code class="py keyword">/</code> <code class="py value">2</code><code class="py plain">) </code><code class="py keyword">+</code> <code class="py value">0.5</code>  <code class="py comments"># 圓心位於中心</code></div>
+<div class="line number41 index40 alt2"><code class="py spaces">    </code><code class="py keyword">for</code> <code class="py plain">i </code><code class="py keyword">in</code> <code class="py functions">range</code><code class="py plain">(</code><code class="py value">1</code><code class="py plain">, grid_size </code><code class="py keyword">+</code> <code class="py value">1</code><code class="py plain">):</code></div>
+<div class="line number42 index41 alt1"><code class="py spaces">        </code><code class="py keyword">for</code> <code class="py plain">j </code><code class="py keyword">in</code> <code class="py functions">range</code><code class="py plain">(</code><code class="py value">1</code><code class="py plain">, grid_size </code><code class="py keyword">+</code> <code class="py value">1</code><code class="py plain">):</code></div>
+<div class="line number43 index42 alt2"><code class="py spaces">            </code><code class="py comments"># 檢查格子中心點是否在圓內</code></div>
+<div class="line number44 index43 alt1"><code class="py spaces">            </code><code class="py keyword">if</code> <code class="py plain">is_in_circle(center, center, i, j, radius):</code></div>
+<div class="line number45 index44 alt2"><code class="py spaces">                </code><code class="py plain">fill(i, j, </code><code class="py string">"black"</code><code class="py plain">)</code></div>
+<div class="line number46 index45 alt1"> </div>
+<div class="line number47 index46 alt2"><code class="py comments"># 主程式</code></div>
+<div class="line number48 index47 alt1"><code class="py plain">grid(</code><code class="py value">10</code><code class="py plain">, </code><code class="py value">10</code><code class="py plain">, gs)</code></div>
+<div class="line number49 index48 alt2"><code class="py plain">draw_circle(</code><code class="py value">10</code><code class="py plain">, </code><code class="py value">5</code><code class="py plain">)  </code><code class="py comments"># 圓的半徑為 4.5</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p></p>
+<p>11月27號</p>
+<div>
+<div class="syntaxhighlighter py" id="highlighter_464979">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line number1 index0 alt2">1</div>
+<div class="line number2 index1 alt1">2</div>
+<div class="line number3 index2 alt2">3</div>
+<div class="line number4 index3 alt1">4</div>
+<div class="line number5 index4 alt2">5</div>
+<div class="line number6 index5 alt1">6</div>
+<div class="line number7 index6 alt2">7</div>
+<div class="line number8 index7 alt1">8</div>
+</td>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="py plain">n </code><code class="py keyword">=</code> <code class="py value">11</code> <code class="py plain">　</code><code class="py comments"># 總共的行數</code></div>
+<div class="line number2 index1 alt1"><code class="py plain">space </code><code class="py keyword">=</code><code class="py plain">　</code><code class="py string">'_'</code></div>
+<div class="line number3 index2 alt2"><code class="py plain">center </code><code class="py keyword">=</code><code class="py plain">n</code><code class="py keyword">/</code><code class="py keyword">/</code><code class="py value">2</code></div>
+<div class="line number4 index3 alt1"><code class="py comments">#print(center)</code></div>
+<div class="line number5 index4 alt2"> </div>
+<div class="line number6 index5 alt1"><code class="py keyword">for</code> <code class="py plain">y </code><code class="py keyword">in</code> <code class="py functions">range</code><code class="py plain">(n):</code></div>
+<div class="line number7 index6 alt2"><code class="py spaces">    </code><code class="py keyword">for</code> <code class="py plain">x </code><code class="py keyword">in</code> <code class="py functions">range</code><code class="py plain">(n)</code></div>
+<div class="line number8 index7 alt1"><code class="py spaces">        </code><code class="py functions">print</code><code class="py plain">(</code><code class="py string">"("</code><code class="py plain">,ｘ,＂,＂,ｙ,＂）＂,ｓｅｐ＝＂＂）</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p></p>
+<p><br/><br/></p><br />w10 << <a href='w10.html'>Previous</a> <a href='HW2.html'>Next</a> >> HW2</div>
         
     <!-- footer -->
       <div class="container">
