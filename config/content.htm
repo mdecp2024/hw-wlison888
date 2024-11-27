@@ -316,7 +316,8 @@ for y in range(n):
 </div>
 </div>
 <p></p>
-<p>11月27號</p>
+<p>11月27號 </p>
+<p>第一題 </p>
 <div>
 <div class="syntaxhighlighter py" id="highlighter_464979">
 <table border="0" cellpadding="0" cellspacing="0">
@@ -347,9 +348,64 @@ for y in range(n):
 </tr>
 </tbody>
 </table>
+<p>第二題</p>
 </div>
 </div>
-<p></p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">from browser import html
+from browser import document as doc
+ 
+# 利用 html 建立 canvas 超文件物件
+canvas = html.CANVAS(width = 400, height = 400)
+brython_div = doc["brython_div1"]
+brython_div &lt;= canvas
+ 
+# 每一格的 pixel 數
+gs = 20
+ 
+#gs*tc = canvas width and height
+ 
+ctx = canvas.getContext("2d")
+width = 11
+height = 11
+ 
+ 
+for i in range(width):
+     for j in range(height):
+        #dRect(i*gs, j*gs, gs, gs, 1, "lightgrey")
+         ctx.lineWidth = 1
+         ctx.strokeStyle = 'red'
+         ctx.beginPath();
+         ctx.rect(i*gs,j*gs,gs,gs)
+         ctx.stroke();
+ 
+from browser import html
+from browser import document as doc
+ 
+# 利用 html 建立 canvas 超文件物件
+canvas = html.CANVAS(width = 400, height = 400)
+brython_div = doc["brython_div1"]
+brython_div &lt;= canvas
+ 
+# 每一格的 pixel 數
+gs = 20
+ 
+#gs*tc = canvas width and height
+ 
+ctx = canvas.getContext("2d")
+width = 11
+height = 11
+ 
+ 
+for i in range(width):
+     for j in range(height):
+        #dRect(i*gs, j*gs, gs, gs, 1, "lightgrey")
+         ctx.lineWidth = 1
+         ctx.strokeStyle = 'red'
+         ctx.beginPath();
+         ctx.rect(i*gs,j*gs,gs,gs)
+         ctx.stroke();
+</pre>
+<p><br/><br/></p>
 <p><br/><br/></p><h1>HW2</h1>
 <h4>主題: Python 的數列、判斷式與重複迴圈 (20%)<span style="background-color: #ffff99;"><br/></span></h4>
 <p style="padding-left: 30px;">Python 課程教材: <a href="https://www.learnpythonwithjupyter.com/">https://www.learnpythonwithjupyter.com/</a> - PART 2 and Part 3</p>
