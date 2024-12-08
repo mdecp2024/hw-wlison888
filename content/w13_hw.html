@@ -141,93 +141,9 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">w7 << <a href='w7.html'>Previous</a> <a href='w11_hw.html'>Next</a> >> w11_hw<br /><h1>w10</h1>
-<p>題目一:</p>
-<p><br/><span></span><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/kK3wLj14Sz4?si=cB04FWhrCGZc9RMG" title="YouTube video player" width="560"></iframe></p>
-<p></p>
-<p></p>
-<p>題目二:</p>
-<p></p>
-<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/JxTfmfJG868?si=MBbXdt-drJ23uybn" title="YouTube video player" width="560"></iframe></p>
-<p></p>
-<p>題目三:</p>
-<p>心得:<span>我覺得用我覺得用五種方法執行來解微積分和物理是十分有趣的我覺得用Jupyter和brython比較輕鬆沒有比較複雜的操作,而學習到的可以應用在物理和微積分上來解不會題目</span></p>
-<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/PTGyKHZnEgU?si=n-HeS0iAnL0EhLU4" title="YouTube video player" width="560"></iframe></p>
-<p><br/><br/><br/><br/><br/><br/><br/><span>題目一:</span></p>
-<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import math
-
-# 設定區域大小
-size = 10
-radius = 3  # 圓的半徑
-center = (size // 2, size // 2)  # 圓心位置在 5,5
-
-# 創建 10x10 的字元區域
-grid = [[' ' for _ in range(size)] for _ in range(size)]
-
-# 在區域中畫圓
-for y in range(size):
-    for x in range(size):
-        # 計算每個點到圓心的距離
-        distance = math.sqrt((x - center[0])**2 + (y - center[1])**2)
-        if abs(distance - radius) &lt;= 0.5:  # 判斷點是否在圓周上
-            grid[y][x] = '*'
-
-# 顯示結果
-for row in grid:
-    print(''.join(row))
-</pre>
-<p>第二題</p>
-<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">from browser import html
-from browser import document as doc
-
-# 建立 canvas 超文件物件
-canvas = html.CANVAS(width=400, height=400)
-brython_div = doc["brython_div1"]
-brython_div &lt;= canvas
-
-# 每一格的 pixel 數
-gs = 20
-
-# canvas context
-ctx = canvas.getContext("2d")
-
-# 定義繪製矩形的函數
-def dRect(lux, luy, w, h, s=1, c="lightgrey"):
-    ctx.lineWidth = s
-    ctx.strokeStyle = c
-    ctx.beginPath()
-    ctx.rect(lux, luy, w, h)
-    ctx.stroke()
-
-# 繪製網格
-def grid(width, height, grid_pix):
-    for i in range(width):
-        for j in range(height):
-            dRect(i * grid_pix, j * grid_pix, grid_pix, grid_pix, 1, "lightgrey")
-
-# 填滿指定格子
-def fill(x, y, color):
-    ctx.fillStyle = color
-    ctx.fillRect((x - 1) * gs, (y - 1) * gs, gs, gs)
-
-# 判斷是否在圓形範圍內
-def is_in_circle(cx, cy, x, y, r):
-    return ((x - cx) ** 2 + (y - cy) ** 2) &lt;= r ** 2
-
-# 圓形繪製
-def draw_circle(grid_size, radius):
-    center = (grid_size // 2) + 0.5  # 圓心位於中心
-    for i in range(1, grid_size + 1):
-        for j in range(1, grid_size + 1):
-            # 檢查格子中心點是否在圓內
-            if is_in_circle(center, center, i, j, radius):
-                fill(i, j, "black")
-
-# 主程式
-grid(10, 10, gs)
-draw_circle(10, 5)  # 圓的半徑為 4.5</pre>
-<p></p>
-<p></p><br />w7 << <a href='w7.html'>Previous</a> <a href='w11_hw.html'>Next</a> >> w11_hw</div>
+    <div id="tipue_search_content">w11_hw << <a href='w11_hw.html'>Previous</a> <a href='HW2.html'>Next</a> >> HW2<br /><h1>w13_hw</h1>
+<p><a href="https://mdecp2024.github.io/hw-wlison888/content/Brython.html?src=https://gist.githubusercontent.com/41323225/4f488054fa2332ca41d2ddd4ce0afbbb/raw/47bdd976eee43b02f1b755e6d0a338796c568f38/w13(2)">一個格子</a></p>
+<p><a href="https://mdecp2024.github.io/hw-wlison888/content/Brython.html?src=https://gist.githubusercontent.com/41323225/4f488054fa2332ca41d2ddd4ce0afbbb/raw/47bdd976eee43b02f1b755e6d0a338796c568f38/w13">兩個格子</a></p><br />w11_hw << <a href='w11_hw.html'>Previous</a> <a href='HW2.html'>Next</a> >> HW2</div>
         
     <!-- footer -->
       <div class="container">
