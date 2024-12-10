@@ -4,7 +4,7 @@
 # Update Git submodules
 git submodule update --init
 
-# Install Python packages using pip
+#p Install Python packages using pip
  
  
  
