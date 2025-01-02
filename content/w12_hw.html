@@ -1,0 +1,300 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>cp_hw</title>
+        <meta charset="utf-8">
+<meta property="head" content="H3">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <!-- for Wink3 客製化關閉 -->
+        <!--
+        <link rel="stylesheet" type="text/css" href="./../cmsimde/static/winkPlayer.css" />
+        <script type="text/javascript" src="./../cmsimde/static/winkPlayer.js"></script>
+        -->
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPowerShell.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushMojo.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushRust.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container">
+                <div class="row align-items-center">
+                <h1>41323225 - cp2024 作業網站</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">41323225 - cp2024 作業網站</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">SMap</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li><a href='About.html'>About</a><li><a href='Attendance.html'>Attendance</a><li class='has-children'><a href='HW 1.html'>HW 1</a><ul class='dropdown'><li class='has-children'><a href='HW 1 Exam.html'>HW 1 Exam</a><ul class='dropdown'><li><a href='w7.html'>w7</a><li><a href='w10.html'>w10</a><li><a href='w11_hw.html'>w11_hw</a><li><a href='w12_hw.html'>w12_hw</a><li><a href='w13_hw.html'>w13_hw</a><li><a href='w14_ex.html'>w14_ex</a><li><a href='w15.html'>w15</a></li></li></ul></ul><li class='has-children'><a href='HW2.html'>HW2</a><ul class='dropdown'><li class='has-children'><a href='HW 2 Exam.html'>HW 2 Exam</a><ul class='dropdown'><li><a href='w16_exam1.html'>w16_exam1</a></li></li></ul></ul><li class='has-children'><a href='HW 3.html'>HW 3</a><ul class='dropdown'><li><a href='HW 3 Exam.html'>HW 3 Exam</a></li></ul><li class='has-children'><a href='HW 4.html'>HW 4</a><ul class='dropdown'><li><a href='HW 4 Exam.html'>HW 4 Exam</a></li></ul><li><a href='Final Report.html'>Final Report</a><li><a href='Brython.html'>Brython</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">w11_hw << <a href='w11_hw.html'>Previous</a> <a href='w13_hw.html'>Next</a> >> w13_hw<br /><h1>w12_hw</h1>
+<p><span>第一題:Text, questions, and art </span></p>
+<p>input0範例程式:<a href="https://mdecp2024.github.io/hw-wlison888/content/Brython.html?src=https://gist.githubusercontent.com/41323225/0ff494ee8c995ec7656869b1abe002eb/raw/e03de52c144b1ff48ca024a4fc60f90da1e95b97/888.py">你的名子</a></p>
+<h4>print0範例程式:<a href="https://mdecp2024.github.io/hw-wlison888/content/Brython.html?src=https://gist.githubusercontent.com/41323225/51b6d4366d530247f7de1d8fee345db8/raw/7fe09de283cadfcfd64784280649b95f9cc097c1/cat.py"><span> </span>貓</a></h4>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">print ("   /\_/\   ")
+print (" &gt;^.^&lt;   ")
+print ("    / \    ")
+print ("   (___)___")</pre>
+<h4><span>第二題:Events and favorites</span></h4>
+<h4><span>1範例程式:<a href="https://mdecp2024.github.io/hw-wlison888/content/Brython.html?src=https://gist.githubusercontent.com/41323225/bef0f2ce0159c21b4fa5d8652e78f9aa/raw/85f566b02422b42ad5bb7f2d23859b60b4335fb6/9999.py">名字</a></span></h4>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">first_name = "chou" #變數first_name為"自己的姓"
+last_name  = "ryan" #變數last_name為"自己的名"
+print (first_name) #列印變數first_name
+print (last_name) #列印變數last_name</pre>
+<p>2範例程式:<a href="https://mdecp2024.github.io/hw-wlison888/content/Brython.html?src=https://gist.githubusercontent.com/41323225/694d9bf8f0c6168bedc53a4dc83807de/raw/1c07798cbfff134781398916e1efd7e9a40d90fc/111.py">名子+食物</a></p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">name = input("What's your name?") #變數name為input所輸入之文字
+favorite_food = input ("What is your favorite food?") #變數favorite_food為input所輸入之文字
+print ("Hi! My name is " + name) #列印"Hi! My name is "(這段為文字) + name(name這個變數的數值)
+print ("My favorite food is " + favorite_food)  #列印"My favorite food is "(這段為文字) + favorite_food(favorite_food這個變數的數值)
+print (name + "'s favorite food is " + favorite_food) #列印name (數值)+ 's favorite food is (此段為文字)+favorite_food(數值)
+</pre>
+<div class="line number1 index0 alt2"><code class="html plain"><em>第三題：if判斷式</em></code></div>
+<div class="line number1 index0 alt2"><code class="html plain"><em></em></code></div>
+<div class="line number1 index0 alt2"><code class="html plain"><code class="html plain"><em><span>範例程式：<a href="https://mdecp2024.github.io/hw-wlison888/content/Brython.html?src=https://gist.githubusercontent.com/41323225/a17b09cb14f66b89a9a45b8e47a72cb5/raw/6467bc96f2b3c16d48641cfcba6d3a3bf7fbeea2/111.py">In a bookstore</a></span></em></code></code>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">programming_books = ["Learn python", "Python for all",  "Intro to python"] #在programming_books變數裡面有3個字串
+print (programming_books) #列印programming_books變數(會出現三個字串)
+wanted_book = input("Hi! What book would you like to buy?") #設定一個變數為wanted_book其等於input指令回傳之數值
+print (wanted_book) #列印wanted_book變數
+if wanted_book in programming_books: #如果 "變數wanted_book"回傳之值 在"programming_books"字串當中
+    print ("Yes, we sell it!")       #列印 是的我們有販賣
+else:                            #反之    
+    print ("Sorry, we don't sell that book") #列印 抱歉我們沒有販賣</pre>
+<code class="html plain"><em><span>第四題：append()和remove()</span></em></code></div>
+<div class="line number1 index0 alt2"><code class="html plain"><em><span></span></em></code></div>
+<div class="line number1 index0 alt2"><code class="html plain"><em><span>範例程式:<a href="https://mdecp2024.github.io/hw-wlison888/content/Brython.html?src=https://gist.githubusercontent.com/41323225/b54e4acec179953da0c44bdbd3746d2a/raw/3beac20db59236a865ef61182095d7efc2727d72/111.py">購物清單</a></span></em></code></div>
+<div class="line number1 index0 alt2">
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">shopping_list = ["carrots", "chocolate", "olives"] #在shopping_list變數裡面有3個字串
+print (shopping_list) #列印shopping_list變數
+new_item = input("What else do I have to buy?") #設定一個變數為new_item其等於input指令回傳之數值
+ 
+if new_item in shopping_list:  #如果 "變數new_item(想買的物品)"回傳之值 在"shopping_list(購物清單)"字串當中就執行以下程式
+    print (new_item + " is/are already in the shopping list") #列印 "new_item變數的數值"+字串is/are already in the shopping list
+    print (shopping_list) #列印shopping_list字串
+else:                    #反之
+    shopping_list.append(new_item) #購物清單.加入(想要購買的物品)    如果不在購物清單內那就將未在字串中物品加入購物清單
+    print (shopping_list) #列印購物清單
+#以下是移除物品的程式
+item_to_remove = input("What do I have to remove?") #item_to_remove(想要移除的物品)
+ 
+if item_to_remove in shopping_list: #如果 想要移除的物品在購物清單中 那就執行
+    shopping_list.remove(item_to_remove) #把購物清單.移除(想要移除的物品)
+    print (shopping_list) #列印購物清單
+else:                     #反之
+    print (item_to_remove + " is/are not in the list") #列印 想要移除的物品+is/are not in the list(不在清單中)
+    print (shopping_list) #列印購物清單
+</pre>
+<code class="html plain"><em><span>第五題:Customizing the burger menu</span></em></code></div>
+<div class="line number1 index0 alt2"><code class="html plain"><em><span></span></em></code></div>
+<div class="line number1 index0 alt2"><code class="html plain"><em><span>說明:List methods: .index(), .pop(), and .insert() </span></em></code></div>
+<div class="line number1 index0 alt2"><em><span>範例程式:<a href="https://mdecp2024.github.io/hw-wlison888/content/Brython.html?src=https://gist.githubusercontent.com/41323225/1dcb3f180758fc625c3e98274d5f1405/raw/08ffc039169d0296680767477877ea7019129478/111.py">menu</a></span></em></div>
+<div class="line number1 index0 alt2">
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">todays_menu = ["burger", "salad", "coke"] #todays_menu變數=今天菜單["burger", "salad", "coke"
+side_dish_index = todays_menu.index("salad") #side_dish_index變數 = 今日菜單.找出"沙拉"位於字串中第幾個
+print (side_dish_index) #列印side_dish_index  列印他在第幾位
+todays_menu.pop(side_dish_index) #今日菜單.移除字串中的元素(side_dish_index變數"沙拉")  這裡意思是移除沙拉
+print (todays_menu) #列印今日菜單
+todays_menu.insert(side_dish_index, "fries") #今日菜單.在字串中插入(side_dish_index, "fries")   這裡意思是加入薯條
+print (todays_menu) #列印今日菜單</pre>
+<code class="html plain"><em><span>第六題：切片取值</span></em></code></div>
+<div class="line number1 index0 alt2"><code class="html plain"><em><span><a href="https://mdecp2024.github.io/hw-wlison888/content/Brython.html?src=https://gist.githubusercontent.com/41323225/49ec3c759fd8673c04746e80e74980d4/raw/aad04edd820415ea4f227a6ea5e2d7afc1efaffe/111.py">city</a></span></em></code></div>
+<div class="line number1 index0 alt2">
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">cities = ["San Diego", "Prague", "Cape Town", "Tokyo", "Melbourne"] #變數城市=以下字串
+print (cities) #列印 (城市)
+print (cities[1]) #列印 (城市 [1])    由於程式是由0開始計算 所以第一個會是Prague
+print (cities[1:4]) #列印 (城市 [1:4]) 列印出來會是['Prague', 'Cape Town', 'Tokyo'] 由於執行到4就停止了所以只有三個
+print (cities[1:4:2]) #列印 城市 [1:4:2]) 列印出來會是['Prague', 'Tokyo'] 因為步數設定為2 程式執行會把1~4由左至右一次跳過兩個進行輸出
+print (cities[0:3]) #列印 城市 [0:3]) 列印出來會是['San Diego', 'Prague', 'Cape Town'] 這次是從0開始計算
+print (cities[:3]) #列印 城市 [:3]) 列印出來會是['San Diego', 'Prague', 'Cape Town'] 由於未輸入數值,默認為0
+print (cities[2:5]) #列印 城市 [2:5]) 列印出來會是 ['Cape Town', 'Tokyo', 'Melbourne'] 從2~5
+print (cities[2:]) #列印 城市 [2:]) 列印出來會是 ['Cape Town', 'Tokyo', 'Melbourne'] 如果結束未輸入默認為列表的長度之值
+print (cities[0:5:2]) #列印 城市 [0:5:2]) 列印出來會是['San Diego', 'Cape Town', 'Melbourne'] 程式執行會把0~5由左至右一次跳過兩個進行輸出
+print (cities[::2]) #列印 城市 [::2]) 列印出來會是 ['San Diego', 'Cape Town', 'Melbourne'] 未輸入開始會默認0終點會默認列表的長度
+print (cities[4]) #列印 城市 [4]) 列印出來會是 Melbourne 
+print (cities[-1]) #列印 城市 [-1]) 列印出來會是 Melbourne -值會倒退計算 "含前不含後"
+print (cities[-4:-1]) #列印 城市 [-4:-1]) 列印出來會是 ['Prague', 'Cape Town', 'Tokyo']
+cities[3:0:-1] #這個是切片操作 如果列印出來會是 ['Tokyo', 'Cape Town', 'Prague']
+cities[-2:-5:-1] #這個是切片操作 如果列印出來會是 ['Tokyo', 'Cape Town', 'Prague']
+print (cities[::-1]) #列印 城市 [::-1]) ['Melbourne', 'Tokyo', 'Cape Town', 'Prague', 'San Diego']</pre>
+<code class="html plain"><em><span>第七題:Senses, planets, and a houseng</span></em></code></div>
+<div class="line number1 index0 alt2"><code class="html plain"><em><span>說明:Changing, adding, and removing list elements using slicing</span></em></code></div>
+<div class="line number1 index0 alt2"><code class="html plain"><code class="html plain"><em><span>範例程式:<a href="https://mdecp2024.github.io/hw-wlison888/content/Brython.html?src=https://gist.githubusercontent.com/41323225/82ce20994263e95e66e555075a3f5459/raw/cfe2561d1ee9c49b059a9c6b8772cf0ae1184f1b/111.py">行星</a></span></em></code></code>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false"># 定義一個包含五種感官的清單
+senses = ["eyes", "nose", "ears", "tongue", "skin"]
+print(senses)  # 輸出原始的感官清單
+ 
+# 將清單中索引為1的元素從 "nose" 改為 "smell"
+senses[1] = "smell"
+print(senses)  # 輸出更新後的感官清單
+ 
+# 將索引範圍為3到5的元素（"tongue", "skin"）改為 ["taste", "touch"]
+senses[3:5] = ["taste", "touch"]
+print(senses)  # 輸出更新後的感官清單
+ 
+# 將索引範圍從0到3，步長為2的元素（"eyes", "ears"）改為 ["sight", "hearing"]
+senses[0:3:2] = ["sight", "hearing"]
+print(senses)  # 輸出最終更新後的感官清單</pre>
+<code class="html plain"><em><span><a href="https://mdecp2024.github.io/hw-wlison888/content/Brython.html?src=https://gist.githubusercontent.com/41323225/82ce20994263e95e66e555075a3f5459/raw/cfe2561d1ee9c49b059a9c6b8772cf0ae1184f1b/111.py"><br/></a></span></em></code></div><br />w11_hw << <a href='w11_hw.html'>Previous</a> <a href='w13_hw.html'>Next</a> >> w13_hw</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        
